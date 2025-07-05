@@ -102,6 +102,6 @@ GitHub: @heitor-sg5
 
 ## 📚 References
 
-Bioinformatics Algorithms: An Active Learning Approach (Chapter 1) by
+Bioinformatics Algorithms: An Active Learning Approach (Chapter 4) by
 Phillip Compeau & Pavel Pevzner
 https://bioinformaticsalgorithms.com
