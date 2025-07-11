@@ -67,18 +67,21 @@ The parameters N (leaderboard size), M (allowed masses), T (tolerance threshold)
 
 - Computes the theoretical spectrum of a peptide by calculating all possible subpeptide masses in linear or cyclic form.
 - Useful for simulating expected mass spectra from known peptides and introducing noise/errors to mimic real experimental data.
+- Time complexity: O(n^2 * log n)
 
 ### Branch and Bound Cyclopeptide Sequencing
 
 - Uses a recursive peptide expansion strategy combined with pruning to find peptides consistent with an input experimental spectrum.
 - Filters candidate peptides by checking if their linear spectrum matches subsets of the experimental spectrum, reducing search space.
 - Guarantees to find all peptides whose cyclic spectrum exactly matches the experimental spectrum.
+- Time complexity: O(A^L * L^2 * log L)
 
 ### Cyclopeptide Sequencing with Leaderboard and Convolution
 
 - Improves sequencing accuracy by focusing on amino acid masses frequently observed in the spectral convolution of the input spectrum.
 - Maintains a leaderboard of top-scoring candidate peptides, expanding and trimming it iteratively based on how well peptides’ spectra match the experimental data.
 - Balances exploration and pruning with parameters controlling the leaderboard size and mass tolerance, making it scalable to noisy or large spectra.
+- Time complexity: O(n^2 * log n + N * (n * L + L^3 * log L))
 
 ---
 
