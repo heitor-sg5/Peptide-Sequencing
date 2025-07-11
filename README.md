@@ -88,10 +88,12 @@ The parameters N (leaderboard size), M (allowed masses), T (tolerance threshold)
 ## 🧪 Example Output
 
 - Theretical Cyclic Spectrum:
-  0.0 113.1 114.1 128.1 129.1 227.2 242.2 242.2 257.2 355.3 356.3 370.3 371.3 484.4
+  
+    0.0 113.1 114.1 128.1 129.1 227.2 242.2 242.2 257.2 355.3 356.3 370.3 371.3 484.4
 
 - Cyclocpeptide Sequencing:
-  Peptide: SPVM | Score: 14
+  
+    Peptide: SPVM | Score: 14
 
 ---
 
